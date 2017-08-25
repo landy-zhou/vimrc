@@ -1,3 +1,10 @@
+# android8.0 上传camera lib 文件
+AQUILA_CHAL_SO_PATH=/home/qiangzhou/ext_disk/Work/asr-android80/out/target/product/aquila_evb
+AQUILA_CC_SO_PATH=/home/qiangzhou/ext_disk/Work/asr-android80/out/target/product/aquila_evb
+AQUILAC_CHAL_SO_PATH=/home/qiangzhou/ext_disk/Work/asr-android80/out/target/product/aquilac_evb
+AQUILAC_CC_SO_PATH=/home/qiangzhou/ext_disk/Work/asr-android80/out/target/product/aquilac_evb
+alias push_auqila_so='adb root && adb remount && adb push $AQUILA_CHAL_SO_PATH/vendor/lib/hw/camera.aquila.so /vendor/lib/hw/ && adb push $AQUILA_CC_SO_PATH/vendor/lib/libcamera-core.so /vendor/lib'
+alias push_auqilac_so='adb root && adb remount && adb push $AQUILAC_CHAL_SO_PATH/vendor/lib/hw/camera.aquilac.so /vendor/lib/hw/ && adb push $AQUILAC_CC_SO_PATH/vendor/lib/libcamera-core.so /vendor/lib'
 # 如果开机无法detect camera，图标会消失，用这个脚本可以重新检测，免得恢复出厂设置等几分钟
 alias unhidecamera='adb wait-for-device; ! adb root | grep -e already && adb wait-for-device; adb shell rm /data/system/users/0/package-restrictions.xml && adb reboot' # fail only if device not found, not including file not found, no permission, which should not happen
  
