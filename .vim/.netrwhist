@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera/camera-core/core/test'
+let g:netrw_dirhist_2='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera/camera-core'
+let g:netrw_dirhist_3='/home/qiangzhou/ext_disk/Work/USB_download'
+let g:netrw_dirhist_4='/home/qiangzhou/ext_disk/Work/asr-android71/kernel/linux/drivers/media/platform/aquila-isp'
+let g:netrw_dirhist_5='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera'
+let g:netrw_dirhist_6='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera/camera-core'
+let g:netrw_dirhist_7='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera/camera-core/idm'
+let g:netrw_dirhist_8='/home/qiangzhou/ext_disk/Work/asr-android71/vendor/asr/camera/camera-core'
