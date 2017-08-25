@@ -9,6 +9,9 @@
 "avoid bugs from older version of vi
 set nocompatible
 
+"set unix file format, avoid ^M
+set ff=unix
+
 "color scheme
 colorscheme darkblue
 
@@ -155,3 +158,32 @@ set tags+=~/.vim/systags
 
 "large file min size ,MB
 let g:LargeFile=100
+
+"doxygen toolkit (for c)
+let g:DoxygenToolkit_commentType="C"
+let g:DoxygenToolkit_compactDoc = "yes"
+let g:DoxygenToolkit_briefTag_pre = "@brief "
+let g:DoxygenToolkit_briefTag_post = ""
+let g:DoxygenToolkit_templateParamTag_pre = "@tparam "
+let g:DoxygenToolkit_templateParamTag_post = ""
+let g:DoxygenToolkit_paramTag_pre = "@param "
+let g:DoxygenToolkit_paramTag_post = ""
+let g:DoxygenToolkit_returnTag = "@return "
+let g:DoxygenToolkit_throwTag_pre = "@throw " 
+let g:DoxygenToolkit_throwTag_post = ""
+let g:DoxygenToolkit_blockHeader = "" 
+let g:DoxygenToolkit_blockFooter = "" 
+let g:DoxygenToolkit_fileTag = "@file "
+let g:DoxygenToolkit_authorTag = "@author "
+let g:DoxygenToolkit_authorName="Qiang Zhou" 
+let g:DoxygenToolkit_dateTag = "@date "
+let g:DoxygenToolkit_versionTag = "@version "
+let g:DoxygenToolkit_blockTag = "@name "
+let g:DoxygenToolkit_classTag = "@class "
+let g:DoxygenToolkit_startCommentTag = "/** "
+let g:DoxygenToolkit_startCommentBlock = "/* "
+let g:DoxygenToolkit_interCommentTag = "* "
+let g:DoxygenToolkit_interCommentBlock = "* "
+let g:DoxygenToolkit_endCommentTag = "*/"
+let g:DoxygenToolkit_endCommentBlock = "*/"
+
